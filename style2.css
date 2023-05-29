@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.internshipbox{
+    @apply bg-[#FAEBD7] border-2 border-black text-[#640000] font-semibold my-10 rounded-xl hover:scale-105 ease-in duration-200
+}
+
+.checkboxcss{
+    @apply mx-2 mb-5 bg-slate-50
+    h-10
+}
+input[type=checkbox] {
+    padding: 2px;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+}
+.btn{
+    @apply text-white bg-[#640000] text-center p-2 px-4 rounded-lg mb-7 hover:bg-white hover:text-[#640000] transition duration-200 ease-out hover:ease-in hover:border-2 hover:border-[#640000] hover:mb-6
+}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.cardbody{
+    @apply text-black border-2 border-black rounded-xl my-10 
+}
+
+.box{
+    @apply border-4 border-black rounded-xl hover:scale-110 ease-in duration-300 bg-[#FAEBD7]
+}  
+.image{
+    @apply rounded-xl
+}
+.btn{
+    @apply text-white bg-[#640000] text-center p-2 px-4 rounded-lg mb-7 hover:bg-white hover:text-[#640000] transition duration-200 ease-out hover:ease-in hover:border-2 hover:border-[#640000] hover:mb-6
+}
+nav.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0.9;
+  }
+  nav.sticky:hover{
+    opacity: 1.0;
+  }
+  body{
+    background-image: url(bgimg.jpg);
+     
+  } 

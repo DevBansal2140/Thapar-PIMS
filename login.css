@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color:white;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+    /* height: 100%; */
+}
+
+.form-container {
+	background-color:antiquewhite;
+    margin-left: 1%;
+    margin-top: 2%;
+	flex: 1;
+	padding: 0.6rem;
+    max-width: 30%;
+    min-height: 100%;
+    
+    /* border-radius: 10%; */
+
+}
+
+.form-container h2 {
+	text-align: center;
+}
+
+.form-container label {
+	font-size: 1.4rem;
+}
+
+.form-container input[type=text], 
+.form-container input[type=password] {
+	width: 100%;
+	padding: 1.2rem;
+	margin: 0.8rem 0;
+	display: inline-block;
+	border: 0.1rem solid #ccc;
+	border-radius: 0.4rem;
+	box-sizing: border-box;
+}
+
+.form-container button {
+	background-color: #930002;
+	color: white;
+	padding: 1.4rem 2.0rem;
+	margin: .8rem 0;
+	border: none;
+	border-radius: .4rem;
+	cursor: pointer;
+	width: 100%;
+}
+
+.form-container button:hover {
+	background-color:white;
+    color: #930002;
+    border:0.1rem solid;
+    border-color: #930002;
+    transition: 0.25s;
+}
+
+.forgot-password {
+    text-decoration: none;
+	float: right;
+	font-size: 1.3rem;
+    color: #930002;
+}
+.forgot-password:hover{
+    transition: 0.2s;
+    font-size: 1.5rem;
+}
+
+.image-container {
+	flex: 1;
+	display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 0;
+    min-height: 100%;
+    width: 60%;
+    height: 700px;
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.image-container img {
+	width: 100%;
+    height: 100%;
+	/* height: auto; */
+}
+
+.form-container img{
+  margin-top: 1.5rem;
+  float: left;
+  
+ max-width: 5rem;
+ max-height:5rem;
+ border: .2rem solid #930002;
+ border-radius: 50%;
+ margin-left: 2%;
+ display: inline;
+ /* position: relative; */
+}
+.logo h1
+{ position:relative;
+  top: 2.8rem;
+  left:1.5rem;
+  display:inline;
+}
+.logo{
+  top: 0rem;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 768px) {
+	.form-container {
+		flex: 100%;
+	}
+	.image-container {
+		flex: 100%;
+	}
+}
+
+.wrapper{
+  display: flex;
+    margin-top: 40%;
+    /* margin-left:10%; */
+    justify-content: center;
+}
+.wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    /* padding: 5rem 10rem 10rem 5rem; 
+    */
+    padding-left: 2.2%;
+    padding-right: 2.2%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 3.5rem;
+    display: inline-block;
+    align-items:center;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+    align-content: center;
+  }
+ 
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 0.5rem 0.8rem;
+    border-radius: rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #ffffff;
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+ 
+
+ 
+  .wrapper .icon:hover .tooltip {
+    top: -4.5rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0rem -0.1rem 0rem rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
+    background-color: #1f5de3;
+    color: #ffffff;
+  }
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #dc12a2;
+    color: #ffffff;
+  }
+  .wrapper .google:hover,
+  .wrapper .google:hover .tooltip,
+  .wrapper .google:hover .tooltip::before {
+    background-color:#930002;
+    color: #ffffff;
+  }
+  
+@media screen and (max-width:998px){
+  html{
+    font-size: 55%;
+  }
+  
+}
+
+@media screen and (max-width:768px){
+  html{
+    font-size: 45%;
+  }
+  .form-container{
+    margin: auto;
+    min-width: 50%;
+  }
+  .image-container{
+    display: none;
+  }
+  body{
+    background-color: antiquewhite;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .logo h1{
+    top: 1.7rem;
+  }
+  .logo img{
+    margin-top: 1.5rem;
+  }
+}
+ 

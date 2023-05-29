@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  
+  .header {
+    background-color: #930002;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    font-size: large;
+    position: fixed;
+    width:100%;
+  }
+  
+  .content {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: medium;
+    background-color: antiquewhite;
+  }
+  
+  .content h1, h2 {
+    text-align: center;
+  }
+  
+  .content ul {
+    list-style-type: disc;
+    margin: 2rem;
+  }
+  
+  .content a {
+    display: block;
+    text-align: center;
+    background-color: #930002;
+    color: #fff;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    margin: 3rem auto;
+    max-width: 15rem;
+    border-radius: 2rem;
+  }
+  
+  .content a:hover {
+   
+    scale: 1.1;
+    background-color: antiquewhite;
+    border: 0.25rem solid;
+    border-color: #930002;
+    color: #930002;
+    transition-duration: 200ms;
+  }
+  
+  .content p {
+    text-align: center;
+    margin: 2rem;
+  }
+ 
+
+  .alumni-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* margin: 20px auto; */
+    text-align: center;
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+  
+  .alumni-profile a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .alumni-profile img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    margin-left: .4rem;
+    margin-right: .4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .alumni-profile h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .alumni-profile p {
+    font-size: 1.6rem;
+    margin: .5rem 0;
+  }
+  
+  .alm{
+    margin: auto;
+  }
+
+  .alumni-profile a:hover{
+    scale: 1.2;
+    color: #930002;
+  }
+  
+  @media screen and (max-width:998px){
+    html{
+      font-size: 55%;
+    }
+    
+  }
+  
+  @media screen and (max-width:768px){
+    html{
+      font-size: 45%;
+    }
+    .alumni-profile{
+      
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* align-items: center; */
+     /* margin-left: 25rem; */
+     /* margin-right: 25rem; */
+    }
+    .alumni-profile a{
+      padding-top: 5rem;
+      margin: auto;
+      /* margin-left: 0; */
+    }
+}
+.query{
+    min-width: 30rem;
+    padding: auto;
+}
